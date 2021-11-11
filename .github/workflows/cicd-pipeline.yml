@@ -31,7 +31,7 @@ jobs:
       shell: bash
       run: cp ${GITHUB_WORKSPACE}/.github/workflows/.npmrc ${GITHUB_WORKSPACE}/
     - name: Publish
-      run: npm publish
+      run: npm publish --access public
 
     
 

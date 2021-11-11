@@ -1,5 +1,5 @@
 {
-  "name": "@flowres/ics",
+  "name": "@flowr-es/ics",
   "version": "2.32.1",
   "description": "iCal (ics) file generator and parser",
   "main": "index.js",
