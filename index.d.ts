@@ -109,4 +109,6 @@ export function createEvents(events: EventAttributes[], callback: NodeCallback):
 
 export function createEvents(events: EventAttributes[]): ReturnObject;
 
-export function dateArrayConverter(jsDate: Date): DateArray;
+export interface icsUtils {
+  dateArrayConverter(jsDate: Date): DateArray;
+}

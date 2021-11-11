@@ -1,6 +1,6 @@
 {
   "name": "@flowr-es/ics",
-  "version": "2.32.1",
+  "version": "2.32.2",
   "description": "iCal (ics) file generator and parser",
   "main": "index.js",
   "types": "index.d.ts",
@@ -44,7 +44,7 @@
     "dayjs": "^1.10.7",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "mocha": "^6.2.1",
+    "mocha": "^9.1.3",
     "yargs-parser": "^20.2.9"
   },
   "dependencies": {
