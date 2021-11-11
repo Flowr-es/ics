@@ -4,6 +4,7 @@ import {
   validateEvent,
   formatEvent
 } from './pipeline'
+import * as icsUtils from './utils'
 
 function assignUniqueId(event) {
   event.uid = event.uid || nanoid()
@@ -120,3 +121,5 @@ export function createEvents (events, cb) {
 
   return cb(error, value)
 }
+
+export { icsUtils };
