@@ -109,17 +109,19 @@ export function createEvents(events: EventAttributes[], callback: NodeCallback):
 
 export function createEvents(events: EventAttributes[]): ReturnObject;
 
-export const icsUtils = {
-  formatDate(): any;,
-  setGeolocation(): any;,
-  setContact(): any;,
-  setOrganizer(): any;,
-  setAlarm(): any;,
-  formatDuration(): any;,
-  setSummary(): any;,
-  setDescription(): any;,
-  foldLine(): any;,
-  setLocation(): any;,
-  dateArrayConverter(jsDate: Date): DateArray;,
+export interface IcsUtils {
+  formatDate(): any;
+  setGeolocation(): any;
+  setContact(): any;
+  setOrganizer(): any;
+  setAlarm(): any;
+  formatDuration(): any;
+  setSummary(): any;
+  setDescription(): any;
+  foldLine(): any;
+  setLocation(): any;
+  dateArrayConverter(jsDate: Date): DateArray;
 }
+declare const icsUtils: IcsUtils;
+export { icsUtils }
 
