@@ -1,5 +1,5 @@
 {
-  "name": "@flowr-es/ics",
+  "name": "@flowres/ics",
   "version": "2.32.1",
   "description": "iCal (ics) file generator and parser",
   "main": "index.js",
@@ -26,7 +26,10 @@
   ],
   "author": "Adam Gibbons <adam@agibbons.com> (http://agibbons.com/)",
   "contributors": [
-    { "name": "Carlos Knoke Flores", "email": "carlos@knoke.net" }
+    {
+      "name": "Carlos Knoke Flores",
+      "email": "carlos@knoke.net"
+    }
   ],
   "license": "ISC",
   "bugs": {

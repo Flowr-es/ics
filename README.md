@@ -3,20 +3,20 @@ ics
 
 The [iCalendar](http://tools.ietf.org/html/rfc5545) generator
 
-[![npm version](https://badge.fury.io/js/@flowr-es/ics.svg)](http://badge.fury.io/js/@flowr-es/ics)
+[![npm version](https://badge.fury.io/js/@flowres/ics.svg)](http://badge.fury.io/js/@flowres/ics)
 
-[![Downloads](https://img.shields.io/npm/dm/@flowr-es/ics.svg)](http://npm-stat.com/charts.html?package=@flowr-es/ics)
+[![Downloads](https://img.shields.io/npm/dm/@flowres/ics.svg)](http://npm-stat.com/charts.html?package=@flowres/ics)
 
 ## This is a Fork!
 
-Due to some inactivity, I decided to make a fork and merge the latest PRs and add some more stuff
+I decided to make a fork and merge the latest PRs and add some more stuff.
 The original package is here: https://www.npmjs.com/package/ics
 
 Contains: classification, html support - util for DateArray creation and a bugfix with 0 events
 
 ## Install
 
-`npm install -S @flowr-es/ics`
+`npm install -S @flowres/ics`
 
 ## Example Usage
 
