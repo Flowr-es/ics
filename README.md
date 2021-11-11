@@ -3,7 +3,7 @@ ics
 
 The [iCalendar](http://tools.ietf.org/html/rfc5545) generator
 
-[![npm version](https://badge.fury.io/js/@flowr-es/ics.svg)](http://badge.fury.io/js/@flowr-es/ics)
+[![npm version](https://badge.fury.io/js/@flowr-es%2Fics.svg)](https://badge.fury.io/js/@flowr-es%2Fics)
 
 [![Downloads](https://img.shields.io/npm/dm/@flowr-es/ics.svg)](http://npm-stat.com/charts.html?package=@flowr-es/ics)
 
