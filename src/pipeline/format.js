@@ -42,7 +42,8 @@ export default function formatEvent(attributes = {}) {
     created,
     lastModified,
     calName,
-    htmlContent
+    htmlContent,
+    xProperties
   } = attributes
 
   let icsFormat = ''
@@ -95,6 +96,16 @@ export default function formatEvent(attributes = {}) {
 
   icsFormat += recurrenceRule ? `RRULE:${recurrenceRule}\r\n` : ''
   icsFormat += duration ? `DURATION:${formatDuration(duration)}\r\n` : ''
+
+  if (xProperties) {
+    Object.keys(xProperties).forEach((xPropKey) => {
+      if(!xPropKey.toUpperCase().startsWith("X-")) {
+        xPropKey = `X-${xPropKey}`;
+      }
+      icsFormat += foldLine(`${xPropKey.toUpperCase()}:${xProperties[xPropKey]}`) + '\r\n'
+    })
+  }
+
   icsFormat += `END:VEVENT\r\n`
   icsFormat += `END:VCALENDAR\r\n`
 
