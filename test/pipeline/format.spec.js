@@ -255,4 +255,17 @@ describe('pipeline.formatEvent', () => {
 
     expect(formattedEvent).to.contain('RRULE:FREQ=DAILY')
   })
+
+  it('writes custom x properties', () => {
+    const rawEvent = { xProperties: {
+      'X-CDO-ALLDAYEVENT': 'TRUE',
+      'X-CUSTOM-COUNTER': 5 
+    } };
+    const eventXProps = buildEvent(rawEvent)
+    const formattedEventXProps = formatEvent(eventXProps)
+    Object.keys(rawEvent.xProperties).forEach( it => {
+      expect(formattedEventXProps).to.contain(it.toUpperCase());
+      expect(formattedEventXProps).to.contain(rawEvent.xProperties[it]);
+    })
+  })
 })

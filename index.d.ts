@@ -77,6 +77,9 @@ export type EventAttributes = {
 
   url?: string;
   status?: EventStatus;
+  /**
+   * X-MICROSOFT-CDO-BUSYSTATUS
+   */
   busyStatus?: 'FREE' | 'BUSY' | 'TENTATIVE' | 'OOF';
   
   organizer?: Person;
@@ -91,10 +94,22 @@ export type EventAttributes = {
   recurrenceRule?: string;
   sequence?: number;
   calName?: string;
+  /**
+   * CLASS
+   */
   classification?: classificationType;
   created?: DateArray;
   lastModified?: DateArray;
-  htmlContent: string;
+  /**
+   * X-ALT-DESC;FMTTYPE=text/html
+   */
+  htmlContent?: string;
+  /**
+   * All non-supported X- Custom properties - booleans should be added as string { X-ALLDAY: "TRUE" }
+   */
+   xProperties?: {
+     [/X-.?/]: string | number;
+   },
 } & ({ end: DateArray } | { duration: DurationObject });
 
 export type ReturnObject = { error?: Error; value?: string };
